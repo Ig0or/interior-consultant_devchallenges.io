@@ -1,0 +1,296 @@
+body,
+h1,
+h2,
+p,
+span,
+a,
+img,
+div {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background: #181719;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.header__title {
+  font-family: "Crimson Pro";
+  font-size: 0.875rem;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 8px;
+  margin: 0 15px;
+}
+
+.header__menu {
+  margin: 0 15px;
+}
+
+.header__menu__icon {
+  display: none;
+}
+
+.menu__mobile {
+  display: none;
+}
+
+.header__link {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  color: white;
+  text-decoration: none;
+  margin-left: 86px;
+  padding: 5px;
+}
+
+.header_link--active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+.header__link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+/* Content */
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+.content__left {
+  margin: 120px 15px 0 15px;
+  flex: 1 1 calc(40% - 30px);
+}
+
+.content__title {
+  font-family: "Lora";
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.content__text {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 48px;
+}
+
+.content__btn {
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.content__btn:after {
+  content: "🠖";
+  margin-left: 14px;
+}
+
+.content__right {
+  margin: 0 15px;
+  flex: 1 1 calc(60% - 30px);
+}
+
+.content__person__container {
+  position: relative;
+  top: -70px;
+  left: 36%;
+  max-width: 60%;
+  background: #181719;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content__person__info {
+  display: flex;
+}
+
+.content__person__img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  margin: 20px 20px 25px 30px;
+}
+
+.content__person__name {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  color: white;
+  font-weight: normal;
+  margin: 23px 0px 8px 0px;
+}
+
+.content__person__dept {
+  font-family: "Montserrat";
+  font-size: 0.75rem;
+  color: #828282;
+}
+
+.content__person__text {
+  display: inline-block;
+  font-family: "Lora";
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  max-width: 250px;
+  margin-left: 26px;
+  margin-bottom: 34px;
+}
+
+/* Footer */
+
+.footer {
+  display: block;
+  text-align: center;
+  padding: 24px;
+  font-size: 0.875rem;
+  font-family: "Montserrat";
+  color: #a9a9a9;
+}
+
+@media (max-width: 855px) {
+  /* Header */
+  .header {
+    margin-top: 25px;
+  }
+
+  /* Menu Hamburguer */
+
+  .header__menu {
+    display: none;
+  }
+
+  .menu__mobile {
+    margin-top: 150px;
+  }
+
+  .menu__mobile nav a {
+    display: block;
+    margin: 40px 15px 40px 15px;
+    text-align: center;
+  }
+
+  /* .header__menu__icon {
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    padding: 5px;
+  } */
+
+  .header__menu__icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    background: url("../img/menu_white_24dp.svg") no-repeat center;
+  }
+
+  /* Content */
+  .content {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .content__left {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+
+  .content__title {
+    font-size: 2.25rem;
+    margin-bottom: 25 px;
+  }
+
+  .content__text {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    max-width: 500px;
+  }
+
+  .content__btn {
+    font-size: 1rem;
+  }
+
+  .content__person__container {
+    position: relative;
+    top: -45px;
+    left: 10%;
+    max-width: 80%;
+  }
+
+  .content__person__img {
+    margin: 13px 14px 18px 15px;
+    margin-top: 13px;
+    margin-right: 14px;
+    margin-bottom: 18px;
+  }
+
+  .content__person__name {
+    font-size: 0.8rem;
+    margin: 16px 0px 6px 0px;
+  }
+
+  .content__person__dept {
+    font-size: 0.7rem;
+  }
+
+  .content__person__text {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 350px;
+  }
+}
+
+/* JS */
+
+.remove {
+  position: relative;
+  left: -100%;
+}
+
+.ativo {
+  display: block;
+}
+
+.alterar--bg {
+  background: url("../img/menu_open_white_24dp.svg") no-repeat center;
+}

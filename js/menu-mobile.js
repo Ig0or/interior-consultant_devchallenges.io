@@ -3,13 +3,12 @@ export default class MenuMobile {
     this.botaoMenu = document.querySelector(botaoMenu);
     this.listaMenu = document.querySelector(listaMenu);
     this.conteudos = document.querySelectorAll(conteudos)
-    this.eventos = ['click', 'touchstart']
+    this.eventos = ['click']
 
     this.alterarConteudo = this.alterarConteudo.bind(this)
   }
 
-  alterarConteudo(evento) {
-    console.log(evento)
+  alterarConteudo() {
     this.conteudos.forEach((conteudo) => {
       conteudo.classList.toggle('remove')
     })
@@ -18,8 +17,6 @@ export default class MenuMobile {
   }
 
   clickMenu(){
-    this.eventos.forEach((evento) => {
-      this.botaoMenu.addEventListener(evento, this.alterarConteudo)
-    })
+    this.botaoMenu.addEventListener('click', this.alterarConteudo)
   }
 }

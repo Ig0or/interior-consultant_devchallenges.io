@@ -116,11 +116,14 @@ body {
   font-weight: bold;
   color: white;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-.content__btn:after {
-  content: "🠖";
-  margin-left: 14px;
+.content__btn img {
+  max-width: 20px;
+  max-height: 20px;
+  margin-left: 10px;
 }
 
 .content__right {
@@ -206,13 +209,6 @@ body {
     text-align: center;
   }
 
-  /* .header__menu__icon {
-    display: block;
-    margin-right: 15px;
-    cursor: pointer;
-    padding: 5px;
-  } */
-
   .header__menu__icon {
     display: block;
     width: 30px;
@@ -282,11 +278,13 @@ body {
 
 /* JS */
 
+/* remover conteudo ao clicar no menu hamburguer */
 .remove {
   position: relative;
   left: -100%;
 }
 
+/* ativar menu hamburguer ao clique */
 .ativo {
   display: block;
 }

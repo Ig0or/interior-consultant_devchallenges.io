@@ -3,7 +3,6 @@ export default class MenuMobile {
     this.botaoMenu = document.querySelector(botaoMenu);
     this.listaMenu = document.querySelector(listaMenu);
     this.conteudos = document.querySelectorAll(conteudos)
-    this.eventos = ['click']
 
     this.alterarConteudo = this.alterarConteudo.bind(this)
   }
